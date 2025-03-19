@@ -32,7 +32,7 @@
           /><span class="logo">Product</span>
         </a>
         <nav class="header-nav">
-          <ul class="list">
+          <ul class="list list-nav-menu">
             <li class="menu-list">
               <a href="./index.html" class="menu-link">Product</a>
             </li>
@@ -281,7 +281,7 @@
           Do you require some help for your project: Conception workshop,
           prototyping, marketing strategy, landing page, Ux/UI?
         </p>
-        <ul class="list list-quick">
+        <ul class="list list-quick1">
           <li class="quick-icon">
             <img
               src="./images/avatar.jpg"
@@ -302,6 +302,8 @@
               class="quick-img-two"
             />
           </li>
+        </ul>
+        <ul class="list list-quick2">
           <li class="quick-icon">
             <p class="phrases">I can take care of your pitch</p>
             <img
@@ -323,9 +325,10 @@
             <p class="phrases">I can help marketing strategy</p>
           </li>
         </ul>
+
         <button type="button" class="green-button">Contact our expert</button>
       </section>
-      <section class="contents hidden">
+      <section class="contents container hidden">
         <h2 class="title">Contents Strategies</h2>
         <p class="text">
           We focus on ergonomics and meeting you where you work. It's only a
@@ -375,111 +378,149 @@
           </li>
         </ul>
       </section>
-      <section class="price-table hidden">
+      <section class="price-table container">
         <h2 class="title">Price Table</h2>
         <p class="text">We offer competitive price</p>
-        <ul class="list">
-          <li>
+        <ul class="price-list-main">
+          <li class="price-list">
             <h3 class="title-contents">Free</h3>
-            <p>Brief price description</p>
-            <h4>0 $ Per / month</h4>
-            <ul>
-              <li>Only 2 Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
+            <p class="text text-price-list">Brief price description</p>
+            <div class="price-numbers">
+              <h3 class="price-small-text">
+                <span class="big-numbers">0</span>
+              </h3>
+              <h3 class="numbers-adj">
+                <span class="big-signs">$</span>Per / month
+              </h3>
+            </div>
+            <ul class="price-list-service">
+              <li class="list-service-text">Only 2 Operators</li>
+              <li class="list-service-text">Notifications</li>
+              <li class="list-service-text">Landing Pages</li>
             </ul>
-            <button type="button">Order Now</button>
+            <button type="button" class="green-button">Order Now</button>
           </li>
-          <li>
-            <h3 class="title-contents">Standard</h3>
-            <p>Brief price description</p>
-            <h4>5 $ Per / month</h4>
-            <ul>
-              <li>5+ Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
+          <li class="price-list-cust">
+            <h3 class="title-contents-cust">Standard</h3>
+            <p class="text text-price-list-cust">Brief price description</p>
+            <div class="price-numbers">
+              <h3 class="price-small-text">
+                <span class="big-numbers cust">5</span>
+              </h3>
+              <h3 class="numbers-adj-cust">
+                <span class="big-signs cust">$</span>Per / month
+              </h3>
+            </div>
+            <ul class="price-list-service">
+              <li class="list-service-text cust">5+ Operators</li>
+              <li class="list-service-text cust">Notifications</li>
+              <li class="list-service-text cust">Landing Pages</li>
             </ul>
-            <button type="button">Order Now</button>
+            <button type="button" class="white-button">Order Now</button>
           </li>
-          <li>
-            <h3 class="title-contents">Premium</h3>
-            <p>Brief price description</p>
-            <h4>10 $ Per / month</h4>
-            <ul>
-              <li>10+ Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
+          <li class="price-list">
+            <h3 class="title-contents">Free</h3>
+            <p class="text text-price-list">Brief price description</p>
+            <div class="price-numbers">
+              <h3 class="price-small-text">
+                <span class="big-numbers">0</span>
+              </h3>
+              <h3 class="numbers-adj">
+                <span class="big-signs">$</span>Per / month
+              </h3>
+            </div>
+            <ul class="price-list-service">
+              <li class="list-service-text">Only 2 Operators</li>
+              <li class="list-service-text">Notifications</li>
+              <li class="list-service-text">Landing Pages</li>
             </ul>
-            <button type="button">Order Now</button>
+            <button type="button" class="green-button">Order Now</button>
           </li>
         </ul>
       </section>
-      <section class="hidden">
-        <h2>What Clients Say</h2>
-        <p>
-          Problems trying to resolve the conflict between the two major realms
-          of Classical physics: Newtonian mechanics
+      <section class="reviews container">
+        <h2 class="title title-reviews-main">What Clients Say</h2>
+        <p class="text text-reviews-main">
+          <span class="short-line"
+            >Problems trying to resolve the conflict between</span
+          >
+          the two major realms of Classical physics: Newtonian mechanics
         </p>
-        <ul>
-          <li>
+        <ul class="list-review-main">
+          <li class="list-review">
             <img
               src="./images/Group 204 (1).png"
               alt="4stars"
               width="106"
               height="18"
+              class="stars"
             />
-            <p>
+            <p class="text text-reviews">
               Product helps you see how many more days you need to work to reach
               your financial goal.
             </p>
-            <img
-              src="./images/Ellipse 2.jpg"
-              alt="Wahid Ari"
-              width="50"
-              height="50"
-            />
-            <p>Wahid Ari</p>
-            <p>Designer</p>
+            <div class="user-review">
+              <img
+                src="./images/Ellipse 2.jpg"
+                alt="Wahid Ari"
+                width="50"
+                height="50"
+              />
+              <div class="wahid-ari">
+                <p class="user-name-green">Wahid Ari</p>
+                <p class="user-profesion">Designer</p>
+              </div>
+            </div>
           </li>
-          <li>
+          <li class="list-review">
             <img
               src="./images/Group 204.png"
               alt="4stars"
               width="106"
               height="18"
+              class="stars"
             />
-            <p>
+            <p class="text text-reviews">
               Product helps you see how many more days you need to work to reach
               your financial goal.
             </p>
-            <img
-              src="./images/Ellipse 2 (1).jpg"
-              alt="Wahid Ari"
-              width="50"
-              height="50"
-            />
-            <p>Wahid Ari</p>
-            <p>Designer</p>
+            <div class="user-review">
+              <img
+                src="./images/Ellipse 2 (1).jpg"
+                alt="Wahid Ari"
+                width="50"
+                height="50"
+              />
+              <div class="wahid-ari">
+                <p class="user-name-green">Wahid Ari</p>
+                <p class="user-profesion">Designer</p>
+              </div>
+            </div>
           </li>
-          <li>
+          <li class="list-review">
             <img
               src="./images/Group 204.png"
               alt="4stars"
               width="106"
               height="18"
+              class="stars"
             />
-            <p>
+            <p class="text text-reviews">
               Product helps you see how many more days you need to work to reach
               your financial goal.
             </p>
-            <img
-              src="./images/Ellipse 2 (2).jpg"
-              alt="Wahid Ari"
-              width="50"
-              height="50"
-            />
-            <p>Wahid Ari</p>
-            <p>Designer</p>
+            <div class="user-review">
+              <img
+                src="./images/Ellipse 2 (2).jpg"
+                alt="Wahid Ari"
+                width="50"
+                height="50"
+              />
+              <div class="wahid-ari">
+                <p class="user-name-green">Wahid Ari</p>
+                <p class="user-profesion">Designer</p>
+              </div>
+            </div>
           </li>
         </ul>
       </section>

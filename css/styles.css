@@ -6,6 +6,11 @@ body {
   background-color: #fff;
   color: #22343d;
 }
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
 /* #region reset */
 ul,
 ol {
@@ -55,11 +60,7 @@ button {
 }
 /* #endregion common */
 /* #region header */
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -85,9 +86,12 @@ button {
 .list {
   list-style: none;
   display: flex;
+}
+.list-nav-menu {
   gap: 30px;
 }
 .menu-list {
+  padding: 22px 0;
 }
 .menu-link {
   text-decoration: none;
@@ -176,6 +180,7 @@ button {
 }
 .list-hero {
   margin-top: 45px;
+  gap: 30px;
 }
 .list-hero .green-button {
   font-weight: 700;
@@ -201,6 +206,7 @@ button {
   margin-bottom: 50px;
   display: flex;
   justify-content: space-around;
+  gap: 30px;
 }
 .product-list-group {
 }
@@ -349,24 +355,36 @@ button {
   width: 542px;
   margin: 0 auto 40px;
 }
-.list-quick {
-  display: flex;
-  flex-wrap: wrap;
+.list-quick1 {
+  padding: 0 101.5px;
+  gap: 110px;
+  justify-content: space-between;
 }
-.list-quick:nth-child(1).quick-icon {
-  margin-right: 110px;
+.list-quick2 {
+  gap: 100px;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 .quick-icon {
   display: flex;
-  gap: 20px;
+  gap: 19px;
+  align-items: center;
 }
 .quick-img-one {
 }
 .phrases {
+  display: flex;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
   color: #2f281e;
+  fill: #fff;
+  box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
+  border-radius: 45%;
+  width: 281px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
 }
 .quick-img-two {
 }
@@ -375,17 +393,29 @@ button {
 .quick-img-four {
 }
 .quick .green-button {
+  display: block;
   font-weight: 700;
+  width: 216px;
+  height: 53px;
+  margin: 0 auto 100px;
 }
 /* #endregion quick and easy */
-/* Contents Section */
+/* #region contents */
+
 .contents {
 }
 .contents .title {
   font-size: 34px;
+  text-align: start;
+  margin-bottom: 10px;
 }
 .contents .text {
   font-weight: 500;
+  width: 465px;
+  margin-bottom: 40px;
+}
+.contents .list {
+  gap: 30px;
 }
 .contents-img {
 }
@@ -404,4 +434,217 @@ button {
 .green-text {
   color: #02897a;
 }
-/* Price Table Section */
+/* #endregion contents */
+/* #region price */
+.price-table {
+}
+.price-table .title {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.price-table .text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.price-list-main {
+  display: flex;
+  justify-content: space-between;
+}
+.price-list {
+  width: 322px;
+  height: 456px;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+}
+.price-table .title-contents {
+  margin-bottom: 8px;
+  text-align: center;
+}
+.price-numbers {
+  width: 157px;
+  height: 100px;
+  display: flex;
+  margin-left: 57px;
+}
+.text-price-list {
+  margin-bottom: 16px;
+}
+.big-numbers {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 1.32;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #02897a;
+  margin-right: 7px;
+}
+.big-signs {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  color: #02897a;
+  display: flex;
+  align-self: start;
+  margin-bottom: 4px;
+}
+.numbers-adj {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.01em;
+  color: #afafaf;
+}
+.price-list-service {
+  margin-top: 16px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.price-table .green-button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  width: 139px;
+  height: 44px;
+}
+.list-service-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.38;
+  letter-spacing: 0.01em;
+  color: #22343d;
+  text-align: center;
+}
+.price-list-cust {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  background-color: #02897a;
+  width: 322px;
+  height: 456px;
+  padding: 32px;
+  border-radius: 8px;
+}
+.title-contents-cust {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.66667;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.text-price-list-cust {
+  margin-bottom: 16px;
+  color: #fff;
+}
+.cust {
+  color: #fff;
+}
+.price-table .white-button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #02897a;
+  background-color: #fff;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  width: 139px;
+  height: 44px;
+}
+.numbers-adj-cust {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.01em;
+  color: #e0e0e0;
+}
+/* #endregion price */
+/* #region reviews */
+.reviews {
+  margin: 100px auto;
+}
+.title-reviews-main {
+  margin: 0 auto 10px;
+}
+.short-line {
+  display: block;
+  max-width: 520px;
+}
+.text-reviews-main {
+  width: 537px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+.list-review-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 64px;
+}
+.list-review {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding: 28px 26px;
+  width: 327px;
+  height: 240px;
+  background-color: #fff;
+}
+.stars {
+  margin-bottom: 16px;
+}
+.text-reviews {
+  line-height: 1.75;
+  color: #737373;
+  width: 275px;
+  height: 84px;
+  margin-bottom: 16px;
+}
+.user-review {
+  display: flex;
+}
+.wahid-ari {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 14px;
+  text-align: left;
+}
+.user-name-green {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #02897a;
+}
+.user-profesion {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.01em;
+  color: #252b42;
+}
+/* #endregion reviews */
