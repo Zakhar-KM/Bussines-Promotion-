@@ -668,7 +668,6 @@ button {
   margin-top: 49px;
   margin-left: 51px;
   width: 510px;
-  margin-right: 10px;
 }
 .join .white-button {
   margin-top: 46px;
@@ -688,5 +687,12 @@ button {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  width: 391px;
+  height: 331px;
 }
 /* #endregion join */
+/* #region footer */
+.footer {
+  margin: 100px 145px 40px;
+}
+/* #endregion footer */
